@@ -28,9 +28,9 @@ const Encounter = () => {
     // Create a new combatant object
     const newCombatant = {
       id: Date.now(), // Assign a unique id (use a better method in production)
-      name: newName,
-      init: newInit,
-      hitpoints: newHp
+      name: newName || '',
+      init: newInit || 0,
+      hitpoints: newHp || 0
     };
 
     // Add the new combatant to the state
